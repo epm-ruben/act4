@@ -1,0 +1,18 @@
+site_name: Digitalització 4t ESO
+docs_dir: md
+site_dir: docs
+
+extra_css:
+  - css/extra.css
+
+theme: 
+  name: material
+  language: ca
+  favicon: img/favicon.ico
+
+nav: 
+  - Inici: index.md
+  - Tema 4: 
+    - Introducció: tema4/intro.md 
+    - Activitats: tema4/act.md
+  - Sobre nosaltres: about.md
