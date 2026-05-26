@@ -40,7 +40,7 @@ plugins:
 #   - glightbox
    - page-to-pdf:
       disable: false
-      disableOnServe: true 
+      disableOnServe: false 
 
 markdown_extensions:
    - admonition
@@ -52,6 +52,3 @@ markdown_extensions:
           class: mermaid
           format: !!python/name:pymdownx.superfences.fence_code_format
    - pymdownx.details
-  
-extra_javascript:
-  - https://unpkg.com/mermaid/dist/mermaid.min.js
