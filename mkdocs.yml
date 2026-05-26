@@ -9,6 +9,24 @@ theme:
   name: material
   language: ca
   favicon: img/favicon.ico
+  font: 
+    code: Courier New
+  icon:
+    repo: 'fontawesome/brands/github'
+  palette:
+    - scheme: default
+      toggle:
+        icon: material/brightness-7
+        name: Canvia a mode obscur
+
+    - scheme: slate
+      toggle:
+        icon: material/brightness-4
+        name: Canvia a mode clar
+  features:
+    - navigation.sections
+    - navigation.top
+    - content.code.copy
 
 nav: 
   - Inici: index.md
@@ -16,3 +34,24 @@ nav:
     - Introducció: tema4/intro.md 
     - Activitats: tema4/act.md
   - Sobre nosaltres: about.md
+
+plugins:
+   - search
+#   - glightbox
+   - page-to-pdf:
+      disable: false
+      disableOnServe: true 
+
+markdown_extensions:
+   - admonition
+   - pymdownx.highlight:
+      linenums: true
+   - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+   - pymdownx.details
+  
+extra_javascript:
+  - https://unpkg.com/mermaid/dist/mermaid.min.js
